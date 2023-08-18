@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+
+        <link
+            rel="icon"
+            href="https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357384/assets/naman-favicon.ico"
+        />
+
+        <meta
+            name="keywords"
+            content="hindi keyboard, hindi virtual keyboard, hindi keyboard online, hindi onscreen keyboard, type hindi online, type hindi letters online, type in hindi online, type hindi, type hindi keyboard, hindi typing, writing hindi, type in hindi, hindi letters, hindi keyboard layout, google hindi, hindi inscript keyboard, hindi inscript virtual keyboard, hindi inscript keyboard online, hindi inscript onscreen keyboard, type hindi inscript keyboard, hindi inscript keyboard layout"
+        />
+
+        <meta
+            name="description"
+            content="Write Hindi letters online without installing Hindi keyboard. This online keyboard allows you to type Hindi letters using any computer keyboard, mouse, or touchscreen."
+        />
+
+        <meta
+            property="og:title"
+            content="Hindi Keyboard - हिंदी - Type Hindi Online"
+        />
+        <meta property="og:type" content="website" />
+
+        <meta
+            property="og:description"
+            content="Write Hindi letters online without installing Hindi keyboard. This online keyboard allows you to type Hindi letters using any computer keyboard, mouse, or touchscreen."
+        />
+
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+
+        <link rel="stylesheet" href="styles.css" />
+        <title>Hindi Keyboard - हिंदी - Type Hindi Online</title>
+    </head>
+    <body>
+        <div id="page">
+            <form>
+                <p id="action">
+                    <button type="button" id="selectAll">
+                        Copy to Clipboard
+                    </button>
+                    <button type="button" id="copy" style="display: none">
+                        Copy
+                    </button>
+                    <button type="button" id="undo">Undo</button>
+                    <button type="button" id="redo">Redo</button>
+                    <button type="button" id="saveButton">Save</button>
+                    <button type="button" id="loadButton">Load</button>
+                    <input
+                        id="filename"
+                        placeholder="Specify a filename..."
+                        style="padding: 10px 20px"
+                    />
+                    <button id="download">Download file</button>
+                    <button type="button" id="clearAll" style="display: none">
+                        Clear All
+                    </button>
+                    <input type="hidden" name="data" id="data" value="" />
+                    <!-- <button type="submit">Save Text</button> -->
+                    <button
+                        type="button"
+                        title="Shrink letters"
+                        id="shrink"
+                        style="display: none"
+                    ></button
+                    ><button
+                        type="button"
+                        title="Enlarge letters"
+                        id="enlarge"
+                        style="display: none"
+                    ></button
+                    ><br /><span class="nowrap" style="display: none"
+                        ><a id="email" href="#" class="middle soft_button"
+                            >Send Email</a
+                        ></span
+                    >
+                </p>
+            </form>
+            <br />
+
+            <div class="main_content">
+                <p>
+                    <textarea
+                        id="editor"
+                        name="editor"
+                        rows=""
+                        cols="20"
+                    ></textarea>
+                </p>
+                <div id="keyboard"></div>
+                <script
+                    async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+                ></script>
+                <!-- Responsive -->
+                <ins
+                    class="adsbygoogle"
+                    style="display: block"
+                    data-ad-client="ca-pub-6590006325388707"
+                    data-ad-slot="9929133187"
+                    data-ad-format="auto"
+                    data-full-width-responsive="false"
+                ></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+
+            <div id="gdpr" style="display: none">
+                This site uses cookies and other tracking technologies to assist
+                with your ability to provide feedback, analyze your use of our
+                products and services, and provide content from third parties.
+                <a href="how-we-use-cookies">Cookie Policy</a>
+                <button id="gdpr-btn" type="button">Accept</button>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

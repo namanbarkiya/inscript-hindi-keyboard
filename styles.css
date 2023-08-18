@@ -1,0 +1,520 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Verdana, Helvetica, Arial, Sans-Serif;
+    font-size: 87.5%;
+    line-height: 24px;
+    color: #464646;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: #005a9c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000;
+}
+
+h1 {
+    font-size: 1.2857em;
+    margin: 0.75em 0;
+    color: #057cb5;
+}
+
+h3 {
+    font-size: 1em;
+    margin: 0.75em 0;
+    color: #057cb5;
+}
+
+h4 {
+    text-align: left;
+}
+
+img {
+    border: 0;
+}
+
+table {
+    border-spacing: 0;
+}
+
+td {
+    vertical-align: top;
+}
+
+rb {
+    color: #057cb5;
+    font-size: 100%;
+    margin-left: 0.5em;
+}
+
+rt {
+    color: #e0115f;
+    font-size: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.middle {
+    vertical-align: middle;
+}
+
+.top {
+    vertical-align: top;
+}
+
+#footer {
+    margin-top: 4em;
+    padding-bottom: 2em;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    font-size: 0.75em;
+}
+
+#gdpr {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.75em;
+}
+
+#gdpr-btn {
+    margin: 0 0 0 1em;
+    padding: 0 1em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: unset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: unset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+ul.menu {
+    list-style: none;
+    padding-top: 1em;
+}
+
+li.menuitem {
+    display: inline;
+    padding: 0;
+    margin: 0 0 0 1em;
+}
+
+li.activemenuitem a {
+    border-bottom: 1px solid #3c0;
+}
+
+#action {
+    text-align: left;
+}
+
+#action button {
+    /* padding: 0 5px; */
+    vertical-align: middle;
+    line-height: 18px;
+}
+
+#shrink,
+#enlarge {
+    width: 24px;
+}
+
+a.soft_button {
+    border: 1px solid lightblue;
+    margin-left: 3px;
+    padding: 0 2px;
+    /* white-space: nowrap; */
+}
+
+.share-this {
+    margin: 2em auto 1em auto;
+    text-align: center;
+}
+
+.share-this .share {
+    margin-right: 1em;
+}
+
+.button {
+    display: inline-block;
+    padding: 0 5px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="number"],
+input[type="text"],
+textarea {
+    width: 100vw;
+    height: 100vh;
+    font-family: Verdana, Helvetica, Arial, Sans-Serif;
+    color: #464646;
+    padding: 5px 8px;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); */
+    -webkit-transition: border-color ease-in-out 0.15s,
+        box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s,
+        box-shadow ease-in-out 0.15s;
+}
+
+textarea:focus {
+    outline: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s,
+        box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s,
+        box-shadow ease-in-out 0.15s;
+}
+
+#nb-keyboard {
+    line-height: 20px;
+    font-size: 1em;
+}
+
+#nb-keyboard button {
+    float: left;
+    display: block;
+    margin: 1px;
+    height: 3em;
+    text-align: center;
+    color: gray;
+}
+
+#nb-keyboard .nb-label-natural {
+    color: #e0115f;
+}
+
+#nb-keyboard .nb-label-shift {
+    color: #057cb5;
+}
+
+#nb-keyboard .nb-label-natural,
+#nb-keyboard .nb-label-shift {
+    margin-top: -5px;
+    line-height: 20px;
+    text-align: center;
+    cursor: default;
+}
+
+#nb-keyboard .nb-label-reference {
+    color: gray;
+    font-size: 0.9em;
+    line-height: 12px;
+    text-align: left;
+    cursor: default;
+}
+
+#nb-k29 .nb-label-reference,
+#nb-k32 .nb-label-reference {
+    color: #000;
+}
+
+#nb-keyboard .nb-recessed span {
+    color: #3c0;
+}
+
+#nb-keyboard .nb-recessed-hover span {
+    color: #ffd800;
+}
+
+#nb-keyboard .nb-clear {
+    clear: both;
+}
+
+@media only screen and (max-width: 640px) {
+    #page {
+        margin: 0 2px;
+    }
+
+    #header {
+        margin-bottom: 1em;
+    }
+
+    #logo {
+        display: inline-block;
+        width: 100%;
+        height: 46px;
+        line-height: 46px;
+        background-repeat: repeat-x;
+        background-image: url(/images/nbmobile.jpg);
+    }
+
+    div.side_content {
+        height: 50px;
+    }
+
+    .adslot_1 {
+        width: 320px;
+        height: 50px;
+    }
+
+    a.soft_button {
+        padding: 0 2px 0 0;
+        margin-left: 0;
+    }
+
+    ul.list {
+        list-style: none;
+    }
+
+    ul.list li {
+        text-align: center;
+        line-height: 2em;
+        margin: 1em;
+    }
+
+    textarea {
+        width: 90vw;
+        height: 1000vh;
+    }
+
+    #share {
+        width: 100%;
+        margin: 2em auto 1em auto;
+        text-align: center;
+    }
+
+    #action {
+        line-height: 2.25em;
+    }
+
+    #archived {
+        font-size: 0.85em;
+        margin: 0.5em 0 1em 0;
+    }
+
+    #nb-keyboard button {
+        width: 88px;
+    }
+
+    #nb-keyboard .nb-key {
+        width: 43px;
+    }
+
+    .gsc-search-box,
+    .gsc-control-cse {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 840px) {
+    p {
+        text-align: justify;
+    }
+
+    textarea {
+        width: 90vw;
+        height: 1000vh;
+    }
+
+    #page {
+        width: 630px;
+        margin: 0 auto;
+    }
+
+    #header {
+        margin-bottom: 1em;
+    }
+
+    #logo {
+        display: inline-block;
+        width: 630px;
+        height: 108px;
+        line-height: 108px;
+        background-image: url(/images/nbtab.jpg);
+    }
+
+    div.side_content {
+        height: 60px;
+    }
+
+    .adslot_1 {
+        width: 468px;
+        height: 60px;
+    }
+
+    ul.list {
+        list-style: none;
+        display: inline-block;
+        width: 150px;
+    }
+
+    ul.list li {
+        line-height: 2em;
+        margin: 0;
+    }
+
+    #editor {
+        padding: 30px;
+        margin: 20px;
+        margin-top: 0px;
+        width: 90vw;
+        height: 1000vh;
+    }
+
+    #keyboard {
+        width: 630px;
+    }
+
+    #selectAll,
+    #saveAsTextFile,
+    #postToFacebook,
+    #shrink,
+    #enlarge {
+        margin-right: 2px;
+        padding: 0 5px;
+        vertical-align: middle;
+        line-height: 18px;
+    }
+}
+
+@media only screen and (min-width: 841px) {
+    p {
+        text-align: justify;
+    }
+
+    textarea {
+        width: 90vw;
+        height: 1000vh;
+    }
+
+    #logo {
+        display: inline-block;
+        width: 840px;
+        height: 144px;
+        line-height: 144px;
+        background-image: url(/images/nb.jpg);
+    }
+
+    div.side_content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 160px;
+        _margin-left: -210px;
+    }
+
+    .adslot_1 {
+        display: block;
+        width: 160px;
+        height: 600px;
+    }
+
+    ul.list {
+        list-style: none;
+        display: inline-block;
+        width: 160px;
+    }
+
+    #editor {
+        padding: 30px;
+        margin: 20px;
+        margin-top: 0px;
+        width: 90vw;
+        height: 1000vh;
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    #nb-keyboard {
+        width: 630px;
+    }
+
+    #nb-keyboard button {
+        line-height: 2.75em;
+    }
+
+    #nb-keyboard .nb-key {
+        width: 40px;
+    }
+
+    #nb-backspace {
+        width: 78px;
+    }
+
+    #nb-tab {
+        width: 62px;
+    }
+
+    #nb-k25 {
+        width: 56px;
+    }
+
+    #nb-caps-lock {
+        width: 76px;
+    }
+
+    #nb-enter {
+        width: 84px;
+    }
+
+    #nb-left-shift {
+        width: 46px;
+    }
+
+    #nb-right-shift {
+        width: 114px;
+    }
+
+    #nb-space {
+        width: 246px;
+        text-align: center;
+    }
+
+    #nb-right-ctrl,
+    #nb-right-alt,
+    #nb-escape {
+        width: 62px;
+    }
+
+    #nb-left-ctrl,
+    #nb-left-alt,
+    #nb {
+        width: 60px;
+    }
+}
+
+;
